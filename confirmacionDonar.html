@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/style/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>EDUCARE</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navbar-left">
+          <a href="index.html" id="logo">EDUCARE</a>
+          <nav>
+            <ul>
+              <li class="expandible"><a href="index.html">EDUCARE</a></li>
+              <li><a href="actividades.html">Actividades</a></li>
+              <li><a href="articulos.html">Artículos</a></li>
+              <li><a href="asociate.html">Asociate</a></li>
+              <li><a href="donar.html">Donar</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="navbar-right">
+          <button type="submit" class="navbar-btn" id="btn-donar">DONAR</button>
+          <button type="submit" class="navbar-btn" id="btn-alta">
+            DARSE DE ALTA
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <h2 class="donar-titulo">Donar</h2>
+
+    <div class="confirmacion-donar">
+      <div class="principal-donar">
+        <form action="">
+          <div class="principal-donar-left">
+            <h3>Introduce tus datos</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              maiores molestias nobis similique laboriosam fugiat alias tempore
+              eaque sunt minus distinctio laudantium ipsum rerum porro enim,
+              dicta nulla, nam doloremque.
+            </p>
+
+            <h3>Datos Personales</h3>
+
+            <div class="input-box">
+              <label for="correo"> </label>
+              <input
+                value=""
+                type="email"
+                name="correo"
+                id="correo"
+                placeholder="Email"
+                required
+              />
+            </div>
+
+            <div class="subConfDonar">
+              <div class="input-box">
+                <label for="nombre"> </label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  placeholder="Nombre"
+                  required
+                />
+              </div>
+
+              <div class="input-box">
+                <label for="apellidos"> </label>
+                <input
+                  type="text"
+                  name="apellidos"
+                  id="apellidos"
+                  placeholder="Apellidos"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="subConfDonar">
+              <div class="input-box">
+                <label for="dni"> </label>
+                <input
+                  type="text"
+                  id="dni"
+                  name="dni"
+                  placeholder="DNI / NIE"
+                  required
+                />
+              </div>
+
+              <div class="input-box">
+                <label for="telefono"> </label>
+                <input
+                  type="tel"
+                  name="telefono"
+                  id="telefono"
+                  placeholder="Teléfono"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="input-box">
+              <label for="nacimiento">Fecha de nacimiento: </label>
+              <input type="date" name="nacimiento" id="nacimiento" />
+            </div>
+
+            <h3>Dirección</h3>
+
+            <div class="subConfDonar">
+              <div class="input-box">
+                <label for="tipovia">Tipo de via: </label>
+                <select name="tipovia" id="tipovia">
+                  <option value="" disabled selected>
+                    Selecciona una opción
+                  </option>
+                  <option value="calle">Calle</option>
+                  <option value="carretera">Carretera</option>
+                  <option value="paseo">Paseo</option>
+                  <option value="avenida">Avenida</option>
+                  <option value="plaza">Plaza</option>
+                  <option value="travesia">Travesia</option>
+                </select>
+              </div>
+
+              <div class="input-box">
+                <label for="nombrevia"></label>
+                <input
+                  type="text"
+                  name="nombrevia"
+                  id="nombrevia"
+                  placeholder="Nombre de la vía"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="subConfDonar">
+              <div class="input-box">
+                <label for="codigopostal"> </label>
+                <input
+                  type="text"
+                  name="codigopostal"
+                  id="codigopostal"
+                  placeholder="Código postal"
+                />
+              </div>
+
+              <div class="input-box">
+                <label for="localidad"> </label>
+                <input
+                  type="text"
+                  name="localidad"
+                  id="localidad"
+                  placeholder="Localidad"
+                  required
+                />
+              </div>
+            </div>
+
+            <button type="submit" class="btn-articulo">Continuar</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="donacion10">
+        <h4>Donacion de 10€</h4>
+        <img
+          src="images/confirmar_donacion.jpg"
+          alt="Maestra enseñando a sus alumnos"
+        />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem iusto
+          sed totam quas! Esse sapiente maiores optio fugiat! Placeat voluptate
+          esse adipisci nostrum eaque vitae pariatur, ad qui earum temporibus?
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footerColumn">
+        <h3>Apoya nuestro trabajo</h3>
+        <button class="navbar-btn" id="footer-btn-donar">DONAR AHORA</button>
+      </div>
+      <div class="footerColumn">
+        <h3>Conecta con nosotros</h3>
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.x.com/">Twitter</a>
+        <a href="https://www.youtube.com/">YouTube</a>
+      </div>
+      <div class="footerColumn">
+        <h3>Informate</h3>
+        <p class="footerColumn3p">
+          Descubre más sobre nuestro impacto transformador y programas
+          educativos al explorar nuestra sección de 'Más Información'.
+        </p>
+        <p>
+          <button class="navbar-btn" id="footer-btn-info">
+            Más Información
+          </button>
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

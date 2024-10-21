@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/style/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>EDUCARE</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navbar-left">
+          <a href="index.html" id="logo">EDUCARE</a>
+          <nav>
+            <ul>
+              <li class="expandible"><a href="index.html">EDUCARE</a></li>
+              <li><a href="actividades.html">Actividades</a></li>
+              <li><a href="articulos.html">Artículos</a></li>
+              <li><a href="asociate.html">Asociate</a></li>
+              <li><a href="donar.html">Donar</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="navbar-right">
+          <button type="submit" class="navbar-btn" id="btn-donar">DONAR</button>
+          <button type="submit" class="navbar-btn" id="btn-alta">
+            DARSE DE ALTA
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <h2 class="donar-titulo">Donar</h2>
+
+    <div class="pag-donar">
+      <div class="donar-imagen-principal">
+        <img src="images/donar.jpg" alt="Dos niñas riendo" />
+      </div>
+      <div class="donar-right">
+        <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+        <div class="cantidad-opciones">
+          <label for="cantidad5">
+            <input type="radio" name="cantidad" id="cantidad5" value="5" />5€
+          </label>
+          <label for="cantidad10">
+            <input type="radio" name="cantidad" id="cantidad10" value="10" />10€
+          </label>
+          <label for="cantidad20">
+            <input type="radio" name="cantidad" id="cantidad20" value="20" />20€
+          </label>
+          <label for="cantidad50">
+            <input type="radio" name="cantidad" id="cantidad50" value="50" />50€
+          </label>
+        </div>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
+          quibusdam aperiam laborum, ratione maxime laudantium ullam soluta
+          vitae accusantium quos magnam consectetur facilis nisi atque,
+          inventore ad ipsa facere esse? Lorem Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Rem illum possimus mollitia temporibus
+          corrupti ipsum error nemo, totam, expedita repudiandae autem veniam
+          doloremque alias minima dolore? Atque magnam perferendis odit.
+        </p>
+
+        <div>
+          <label for="correo"
+            >Email
+            <input
+              type="email"
+              name="correo"
+              id="correo-donar"
+              placeholder="Email"
+              required
+            />
+          </label>
+        </div>
+
+        <div class="privacidad">
+          <label for="privacidad">
+            <input type="radio" name="privacidad" value="privacidad" required />
+            Entiendo y acepto la política de privacidad, reconociendo el manejo
+            de mis datos personales según las condiciones establecidas. *
+          </label>
+        </div>
+
+        <a
+          id="continuar-donacion"
+          href="confirmacionDonar.html"
+          onclick="guardarCorreo()"
+          >Continuar</a
+        >
+      </div>
+    </div>
+
+    <footer>
+      <div class="footerColumn">
+        <h3>Apoya nuestro trabajo</h3>
+        <button class="navbar-btn" id="footer-btn-donar">DONAR AHORA</button>
+      </div>
+      <div class="footerColumn">
+        <h3>Conecta con nosotros</h3>
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.x.com/">Twitter</a>
+        <a href="https://www.youtube.com/">YouTube</a>
+      </div>
+      <div class="footerColumn">
+        <h3>Informate</h3>
+        <p class="footerColumn3p">
+          Descubre más sobre nuestro impacto transformador y programas
+          educativos al explorar nuestra sección de 'Más Información'.
+        </p>
+        <p>
+          <button class="navbar-btn" id="footer-btn-info">
+            Más Información
+          </button>
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/style/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Asociate</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navbar-left">
+          <a href="index.html" id="logo">EDUCARE</a>
+          <nav>
+            <ul>
+              <li class="expandible"><a href="index.html">EDUCARE</a></li>
+              <li><a href="actividades.html">Actividades</a></li>
+              <li><a href="articulos.html">Artículos</a></li>
+              <li><a href="asociate.html">Asociate</a></li>
+              <li><a href="donar.html">Donar</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="navbar-right">
+          <button type="submit" class="navbar-btn" id="btn-donar">DONAR</button>
+          <button type="submit" class="navbar-btn" id="btn-alta">
+            DARSE DE ALTA
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <h2 id="asociate-header">Asociate</h2>
+
+    <form action="">
+      <div class="asociate-primer-bloque">
+        <div class="input-box">
+          <label for="nombre"></label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Nombre"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <label for="papellido"></label>
+          <input
+            type="text"
+            name="papellido"
+            id="papellido"
+            placeholder="Primer Apellido"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <label for="sapellido"></label>
+          <input
+            type="text"
+            name="sapellido"
+            id="sapellido"
+            placeholder="Segundo Apellido"
+            required
+          />
+        </div>
+        <div class="input-select">
+          <label for="trato"></label>
+          <select name="trato" id="trato" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="Sr">Sr.</option>
+            <option value="Sra">Sra.</option>
+          </select>
+        </div>
+        <div class="input-box">
+          <label for="codigopostal"></label>
+          <input
+            type="text"
+            name="codigopostal"
+            id="codigopostal"
+            placeholder="Código Postal"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <label for="telefono"></label>
+          <input
+            type="text"
+            name="telefono"
+            id="telefono"
+            placeholder="Teléfono (opcional)"
+          />
+        </div>
+        <div class="input-box">
+          <label for="correo"></label>
+          <input
+            type="email"
+            name="correo"
+            id="correo"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="input-select">
+          <label for="cuota"></label>
+          <select name="cuota" id="cuota" required>
+            <option value="" disabled selected>Selecciona una cantidad</option>
+            <option value="5">5€</option>
+            <option value="10">10€</option>
+            <option value="20">20€</option>
+            <option value="50">50€</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="intereses">
+        <h3>Intereses</h3>
+        <div class="input-checkbox">
+          <label for="intereses-1">
+            <input type="checkbox" name="intereses" id="intereses-1" /> Interes
+            1
+          </label>
+          <label for="intereses-2">
+            <input type="checkbox" name="intereses" id="intereses-2" /> Interes
+            2
+          </label>
+          <label for="intereses-3">
+            <input type="checkbox" name="intereses" id="intereses-3" /> Interes
+            3
+          </label>
+          <br />
+          <label for="intereses-4">
+            <input type="checkbox" name="intereses" id="intereses-4" /> Interes
+            4
+          </label>
+          <label for="intereses-5">
+            <input type="checkbox" name="intereses" id="intereses-5" /> Interes
+            5
+          </label>
+          <label for="intereses-6">
+            <input type="checkbox" name="intereses" id="intereses-6" /> Interes
+            6
+          </label>
+        </div>
+      </div>
+
+      <div class="intereses-priv-news">
+        <div class="privacidad">
+          <label>
+            <input type="radio" name="privacidad" value="privacidad" required />
+            Entiendo y acepto la política de privacidad, reconociendo el manejo
+            de mis datos personales según las condiciones establecidas. *
+          </label>
+        </div>
+
+        <div class="insc-newsletter">
+          <label>
+            <input type="checkbox" name="inscnewsletter" id="inscnewsletter" />
+            Inscribirse al Newsletter
+          </label>
+        </div>
+
+        <button type="submit" class="btn-newsletter">Enviar</button>
+      </div>
+    </form>
+
+    <footer>
+      <div class="footerColumn">
+        <h3>Apoya nuestro trabajo</h3>
+        <button class="navbar-btn" id="footer-btn-donar">DONAR AHORA</button>
+      </div>
+      <div class="footerColumn">
+        <h3>Conecta con nosotros</h3>
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.x.com/">Twitter</a>
+        <a href="https://www.youtube.com/">YouTube</a>
+      </div>
+      <div class="footerColumn">
+        <h3>Informate</h3>
+        <p class="footerColumn3p">
+          Descubre más sobre nuestro impacto transformador y programas
+          educativos al explorar nuestra sección de 'Más Información'.
+        </p>
+        <p>
+          <button class="navbar-btn" id="footer-btn-info">
+            Más Información
+          </button>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

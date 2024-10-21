@@ -1,0 +1,827 @@
+:root {
+  --color1: #64ade0;
+  --color2: #7ec2e8;
+  --color3: #a0d2e7;
+  --color4: #b3ebf7;
+  --color5: #cdffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  padding: 20px;
+  margin-bottom: 40px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgb(100, 173, 224) 0px 1px 3px;
+}
+
+.navbar-left #logo {
+  font-size: 40px;
+  margin-right: 40px;
+  text-decoration: none;
+  color: var(--color1);
+}
+
+.navbar-left #logo:hover {
+  color: var(--color3);
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left nav {
+  text-transform: uppercase;
+}
+
+.navbar-left nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar-left li {
+  padding: 15px;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-left li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color1);
+  transition: width 0.5s ease;
+}
+
+.navbar-left li:hover::after {
+  width: 100%;
+}
+
+.navbar-left a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-left li :hover {
+  transition: 300ms;
+  color: var(--color1);
+}
+
+.navbar-btn {
+  font-family: "Sodo Sans SemiBold", Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  border-radius: 40px;
+  padding: 7px 20px 5px 20px;
+  margin: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+#btn-alta {
+  color: white;
+  background-color: black;
+}
+
+#btn-alta:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#btn-donar {
+  background-color: white;
+}
+
+#btn-donar:hover {
+  background-color: rgba(100, 173, 224, 0.2);
+}
+
+/*Imagen principal*/
+.contenedor-imagen {
+  background-color: var(--color2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contenedor-imagen-left img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.contenedor-imagen-right {
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.contenedor-imagen-right h1,
+.contenedor-imagen-right p {
+  padding: 20px;
+}
+
+#btn-donar-homepage {
+  transition: 2000ms;
+}
+
+#btn-donar-homepage:hover {
+  transition: 300ms;
+  background-color: var(--color1);
+  color: white;
+  padding-inline: 40px;
+  box-shadow: black 0px 2px 4px;
+}
+
+/*Introduccion*/
+.introduccion {
+  box-shadow: rgb(100, 173, 224) 0px 1px 3px;
+  background: linear-gradient(0deg, #99d6f0 0%, #ffffff 100%);
+}
+
+h2 {
+  padding: 20px 20px 20px 40px;
+  font-size: 35px;
+  box-shadow: rgb(100, 173, 224) 0px 1px 3px;
+  background-color: white;
+}
+
+.introduccion p {
+  padding: 30px;
+  color: #121212;
+  font-size: 18px;
+  box-shadow: 0px -5px 5px #cbcbcb;
+  line-height: 175%;
+  background-color: var(--color3);
+  text-align: justify;
+}
+
+.introduccion-educare {
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+.introduccion-imagen {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.introduccion-imagen img {
+  flex: 1;
+  max-width: 50%;
+  transition: all 500ms ease-in-out;
+}
+
+.introduccion-imagen img:hover {
+  transform: scale(1.05);
+  z-index: 0;
+}
+
+.introduccion-imagen img:not(:hover) {
+  z-index: 50;
+}
+
+/* Novedades */
+.novedades-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.novedades-container-subcontainer {
+  width: 50%;
+  background-color: var(--color3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.novedades-container-subcontainer h3 {
+  font-size: 22px;
+}
+
+.novedades-container-subcontainer:nth-of-type(1) h3 {
+  text-align: right;
+  padding-right: 50px;
+}
+
+.novedades-container-subcontainer:nth-of-type(2) h3 {
+  padding-left: 50px;
+}
+
+.novedades-container-subcontainer a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.novedades-container-subcontainer:nth-of-type(1) a {
+  text-align: right;
+  margin-right: 50px;
+}
+
+.novedades-container-subcontainer:nth-of-type(2) a {
+  margin-left: 50px;
+}
+
+.novedades-container-subcontainer p {
+  line-height: 35px;
+  font-weight: 100;
+}
+
+.novedades-container-subcontainer:nth-last-of-type(1) p {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.novedades-container-subcontainer:nth-last-of-type(2) p {
+  text-align: right;
+  margin-right: 30px;
+}
+
+.novedades-container-subcontainer img {
+  width: 100%;
+  flex: 1;
+  transition: all 500ms ease-in-out;
+}
+
+.novedades-container-subcontainer img:hover {
+  transform: scale(1.05);
+  z-index: 0;
+}
+
+/*Enlaces*/
+#enlaces {
+  background: linear-gradient(0deg, #99d6f0 0%, #ffffff 100%);
+}
+
+#enlacesColm {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.enlaces-home {
+  margin: 0px 30px 70px 30px;
+  text-align: justify;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.enlaces-home img {
+  border: 2px solid var(--color2);
+  border-radius: 50%;
+  margin: 20px 0px;
+  width: 200px;
+}
+
+.enlaces-home button {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 6px 10px;
+  margin: 20px;
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, 1);
+  transition: all 2000ms;
+}
+
+.enlaces-home button:hover {
+  transition: all 300ms;
+  background-color: var(--color2);
+  color: white;
+  padding: 6px 20px;
+}
+
+.enlaces-home button:active {
+  box-shadow: 0px 0px 0px #000000;
+  transform: scale(1.05);
+  background-color: grey;
+  margin: 20px 0px;
+}
+
+.enlaces-home p:first-of-type {
+  font-weight: bold;
+}
+
+.enlaces-home p {
+  padding: 5px;
+  line-height: 140%;
+}
+
+/* Donar */
+#donarColm {
+  background: linear-gradient(0deg, #99d6f0 0%, #ffffff 100%);
+  background-color: var(--color3);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+}
+
+#donarColm-left img {
+  width: 100%;
+  object-fit: cover;
+  height: 90%;
+  border: 2px solid var(--color2);
+  border-left: none;
+  border-radius: 0px 20px 20px 0px;
+}
+
+#donarColum-right {
+  margin: auto;
+  text-align: center;
+  padding: 50px;
+}
+
+#donarColum-right h3 {
+  margin: 0px;
+  padding: 0px;
+}
+#donarColum-right p {
+  margin: 20px;
+}
+
+#btn-donar-donar {
+  font-family: "Sodo Sans SemiBold", Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  border-radius: 40px;
+  padding: 7px 20px 5px 20px;
+  margin: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 2000ms;
+}
+
+#btn-donar-donar:hover {
+  transition: 300ms;
+  background-color: var(--color1);
+  color: white;
+  padding-inline: 40px;
+  box-shadow: black 0px 2px 4px;
+}
+
+/* Newsletter */
+#newsletter {
+  display: flex;
+  background-color: rgba(153, 214, 240, 0.4);
+  justify-content: space-between;
+  padding: 60px;
+}
+
+#newsletter h3 {
+  font-size: 26px;
+}
+
+#newsletterA,
+#newsletterB {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#newsletterB {
+  align-items: center;
+}
+
+#newsletterB input {
+  margin: 20px;
+  border: 2px solid transparent;
+  width: 25em;
+  height: 2.5em;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  transition: all 0.5s;
+  border: 1px solid #4a9dec;
+}
+
+#newsletterB input:hover,
+#newsletterB input:focus {
+  border: 2px solid #4a9dec;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
+}
+
+.btn-newsletter {
+  font-family: "Sodo Sans SemiBold", Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  border-radius: 40px;
+  padding: 7px 20px 5px 20px;
+  margin: 10px;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: 2000ms;
+}
+
+.btn-newsletter:hover {
+  transition: 300ms;
+  background-color: var(--color1);
+  color: white;
+  padding-inline: 40px;
+  box-shadow: black 0px 2px 4px;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color3);
+}
+
+.footerColumn {
+  width: 33%;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footerColumn3p {
+  text-align: justify;
+  line-height: 200%;
+}
+
+#footer-btn-donar,
+#footer-btn-info {
+  transition: 1.5s;
+}
+
+#footer-btn-donar:hover,
+#footer-btn-info:hover {
+  transition: 300ms;
+  background-color: var(--color1);
+  color: white;
+  padding-inline: 40px;
+  box-shadow: black 0px 2px 4px;
+}
+
+/***************ACTIVIDADES*******************/
+#actividades-header {
+  margin-top: -50px;
+}
+#navActividades a {
+  position: fixed;
+  padding: 20px 50px;
+  font-size: 14px;
+  text-decoration: none;
+  color: gray;
+}
+
+#navActividades a:hover {
+  color: rgb(77, 77, 77);
+}
+
+#navActividades {
+  line-height: 400%;
+}
+
+#actividades,
+.actividadesPag {
+  display: flex;
+}
+
+.actividadesPag {
+  margin: 20px;
+  margin-left: 300px;
+  width: 73%;
+  border-radius: 30px;
+  transition: 500ms;
+  padding: 30px 30px;
+}
+
+.actividadesPag:hover {
+  transform: scale(1.03);
+  background-color: #efefef;
+  transition: 500ms;
+  cursor: pointer;
+}
+
+.actividadesPag img {
+  display: block;
+  margin: auto;
+  width: 30%;
+  height: 100%;
+  border: 2px solid var(--color2);
+  border-radius: 10px;
+}
+
+.actividadesPag p {
+  text-align: justify;
+  margin-right: 30px;
+  margin-top: 20px;
+  line-height: 30px;
+  color: #7a7a7a;
+}
+
+/******************ARTÍCULOS*************/
+#articulos-header {
+  margin: -50px 0px 25px 0px;
+}
+
+#articulosFila {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.articuloPag img {
+  width: 90%;
+  border: 2px solid var(--color2);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.articuloPag {
+  margin: 0px 30px 30px 30px;
+  padding: 30px 0px 50px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  transition: 1000ms ease;
+}
+
+.articuloPag:hover {
+  background-color: rgba(200, 200, 200, 0.2);
+  transform: scale(1.05);
+  transition: 500ms ease;
+}
+
+.articuloPag h3 {
+  font-size: 25px;
+}
+
+.articuloPag p {
+  text-align: justify;
+  padding: 20px 20px 40px 20px;
+  line-height: 160%;
+}
+
+.btn-articulo {
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 10px 40px;
+  transition: 500ms;
+}
+
+.btn-articulo:hover {
+  transition: 300ms;
+  color: white;
+  background-color: var(--color2);
+}
+
+/************ASOCIATE*************/
+#asociate-header {
+  margin: -50px 0px 25px 0px;
+}
+
+.asociate-primer-bloque {
+  text-align: center;
+}
+.asociate-primer-bloque input {
+  box-sizing: content-box;
+  padding: 5px 15px;
+  border: 2px solid transparent;
+  width: 300px;
+  height: 25px;
+  outline: none;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  transition: all 0.5s;
+  border: 1px solid #4a9dec;
+}
+
+.asociate-primer-bloque input:hover,
+.asociate-primer-bloque input:focus {
+  border: 2px solid #4a9dec;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
+}
+
+.input-box {
+  margin: 20px;
+}
+
+.input-select {
+  margin: 20px;
+  text-align: center;
+}
+
+.input-select select {
+  box-sizing: content-box;
+  padding: 5px 15px;
+  border: 2px solid transparent;
+  width: 300px;
+  height: 25px;
+  outline: none;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  transition: all 0.5s;
+  border: 1px solid #4a9dec;
+}
+
+.input-select select:hover,
+.input-select select:focus {
+  border: 2px solid #4a9dec;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
+}
+
+.intereses {
+  text-align: center;
+  padding: 10px;
+}
+
+.intereses div {
+  margin: 15px;
+}
+
+.intereses input {
+  margin: 20px 0px 20px 20px;
+  accent-color: #4a9dec;
+}
+
+.intereses-priv-news {
+  text-align: center;
+}
+.intereses-priv-news div {
+  margin: 20px;
+}
+.intereses-priv-news input {
+  accent-color: #4a9dec;
+}
+.intereses-priv-news button {
+  margin-bottom: 40px !important;
+}
+
+/*********DONAR***********/
+.donar-titulo {
+  margin: -50px 0px 0px 0px;
+}
+.pag-donar {
+  display: flex;
+}
+.donar-imagen-principal {
+  margin-top: 40px;
+  display: flex;
+}
+
+.donar-imagen-principal img {
+    width: 500;
+    height: 500px;
+}
+
+.donar-right {
+  margin: 80px 20px 20px 20px;
+  padding: 30px;
+  text-align: center;
+}
+.donar-right p {
+  text-align: justify;
+}
+.donar-right h3,
+p {
+  margin-bottom: 20px;
+}
+.donar-right input {
+  margin: 0px 10px 20px 0px;
+}
+.cantidad-opciones label {
+  margin: 20px;
+  padding: 8px 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+#continuar-donacion {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+#correo-donar {
+  width: 300px;
+  padding: 5px 10px;
+  margin: 5px 0px 20px 0px;
+  border: 1px solid #4a9dec;
+  border-radius: 5px;
+}
+
+.donar-right input,
+.privacidad {
+  accent-color: #4a9dec;
+  font-size: 14px;
+}
+#continuar-donacion:hover {
+  text-decoration: underline;
+}
+
+/********CONFIRMAR DONAR**********/
+.donacion10 {
+  width: 100%;
+  margin: 30px 0px;
+}
+
+.donacion10 img {
+  width: 100%;
+  border: 2px solid var(--color2);
+  border-radius: 5px;
+  margin: 20px 0px;
+}
+.donacion10 h4 {
+  text-align: center;
+  font-size: 20px;
+}
+.donacion10 p {
+  text-align: justify;
+}
+.confirmacion-donar {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 50px;
+}
+.principal-donar p {
+  font-size: 16px;
+}
+
+.subConfDonar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.confirmacion-donar input {
+  border: 2px solid transparent;
+  width: 25em;
+  height: 2.5em;
+  padding-left: 0.8em;
+  outline: none;
+  overflow: hidden;
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  transition: all 0.5s;
+  border: 1px solid #4a9dec;
+}
+
+.confirmacion-donar input:hover,
+.confirmacion-donar input:focus {
+  border: 2px solid #4a9dec;
+  box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
+  background-color: white;
+}
+
+.principal-donar-left .input-box label{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.input-box #tipovia {
+    border: 2px solid transparent;
+    width: 25em;
+    height: 2.5em;
+    padding-left: 0.8em;
+    outline: none;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    transition: all 0.5s;
+    border: 1px solid #4a9dec;
+}
+

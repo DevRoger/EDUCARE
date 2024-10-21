@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/style/style.css" />
+    <title>Actividades</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navbar-left">
+          <a href="index.html" id="logo">EDUCARE</a>
+          <nav>
+            <ul>
+              <li class="expandible"><a href="index.html">EDUCARE</a></li>
+              <li><a href="actividades.html">Actividades</a></li>
+              <li><a href="articulos.html">Artículos</a></li>
+              <li><a href="asociate.html">Asociate</a></li>
+              <li><a href="donar.html">Donar</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="navbar-right">
+          <button type="submit" class="navbar-btn" id="btn-donar">DONAR</button>
+          <button type="submit" class="navbar-btn" id="btn-alta">
+            DARSE DE ALTA
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <h2 id="actividades-header">Actividades</h2>
+
+    <div id="actividades">
+      <nav id="navActividades">
+        <ul>
+          <li><a href="#actividad-1">Explorando el Conocimiento</a></li>
+          <li><a href="#actividad-2">Inmersión en el Éxito</a></li>
+          <li><a href="#actividad-3">Creatividad en Acción</a></li>
+          <li><a href="#actividad-4">Educación Verde</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <div class="actividadesPag">
+          <div onclick="redirigir()">
+            <h3 id="actividad-1">
+              Explorando el Conocimiento: Jornada Educativa para Niños
+            </h3>
+            <p>
+              "Explorando el Conocimiento" es una jornada educativa de EDUCARE
+              que sumerge a los niños en un ambiente lúdico, ofreciendo
+              actividades interactivas y talleres para fomentar la curiosidad y
+              el amor por el aprendizaje. El objetivo es inspirar a los niños a
+              descubrir sus intereses mientras participan en experiencias
+              educativas estimulantes.
+            </p>
+          </div>
+          <img src="images/actividades_1.jpg" alt="" onclick="redirigir()" />
+        </div>
+
+        <div class="actividadesPag">
+          <div onclick="redirigir()">
+            <h3 id="actividad-2">
+              Inmersión en el Éxito: Programa de Tutorías Académicas
+            </h3>
+            <p>
+              "Inmersión en el Éxito" es el programa de tutorías académicas de
+              EDUCARE, diseñado para proporcionar a los estudiantes apoyo
+              personalizado y orientación en su educación. Este programa se
+              centra en fortalecer habilidades académicas, cultivar la confianza
+              y brindar herramientas esenciales para alcanzar el éxito
+              educativo. Con tutores dedicados, el objetivo es impulsar el
+              rendimiento académico y motivar a los estudiantes a alcanzar su
+              máximo potencial, creando así un camino claro hacia el éxito
+              educativo y personal.
+            </p>
+          </div>
+          <img src="images/actividades_2.jpg" alt="" onclick="redirigir()" />
+        </div>
+
+        <div class="actividadesPag">
+          <div onclick="redirigir()">
+            <h3 id="actividad-3">
+              Creatividad en Acción: Taller de Artes para la Infancia
+            </h3>
+            <p>
+              "Creatividad en Acción" es un taller de artes vibrante de EDUCARE,
+              diseñado para inspirar la expresión artística en los niños. Este
+              taller proporciona un espacio donde los pequeños artistas pueden
+              explorar su creatividad a través de actividades emocionantes,
+              desde pintura hasta manualidades. Con el objetivo de nutrir la
+              imaginación y fomentar la confianza en la autoexpresión, el taller
+              de artes busca cultivar habilidades artísticas mientras brinda a
+              los niños la oportunidad de descubrir y compartir su creatividad
+              única.
+            </p>
+          </div>
+          <img src="images/actividades_3.jpg" alt="" onclick="redirigir()" />
+        </div>
+
+        <div class="actividadesPag">
+          <div onclick="redirigir()">
+            <h3 id="actividad-4">
+              Educación Verde: Día de Actividades EcoEducativas
+            </h3>
+            <p>
+              "Educación Verde: Día de Actividades EcoEducativas" es una
+              iniciativa de EDUCARE que sumerge a los participantes en
+              experiencias educativas centradas en la sostenibilidad y el
+              respeto por el medio ambiente. Durante este evento, los niños
+              participan en diversas actividades ecoeducativas, desde la siembra
+              de plantas hasta la exploración de prácticas amigables con el
+              entorno. El objetivo es concienciar sobre la importancia de cuidar
+              nuestro planeta mientras se fomenta la conexión emocional con la
+              naturaleza. A través de juegos y proyectos prácticos, se busca
+              inspirar a los niños a convertirse en defensores activos del medio
+              ambiente.
+            </p>
+          </div>
+          <img src="images/actividades_4.jpg" alt="" onclick="redirigir()" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footerColumn">
+        <h3>Apoya nuestro trabajo</h3>
+        <button class="navbar-btn" id="footer-btn-donar">DONAR AHORA</button>
+      </div>
+      <div class="footerColumn">
+        <h3>Conecta con nosotros</h3>
+        <a href="">Facebook</a>
+        <a href="">Instagram</a>
+        <a href="">Twitter</a>
+        <a href="">YouTube</a>
+      </div>
+      <div class="footerColumn">
+        <h3>Informate</h3>
+        <p class="footerColumn3p">
+          Descubre más sobre nuestro impacto transformador y programas
+          educativos al explorar nuestra sección de 'Más Información'.
+        </p>
+        <p>
+          <button class="navbar-btn" id="footer-btn-info">
+            Más Información
+          </button>
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
